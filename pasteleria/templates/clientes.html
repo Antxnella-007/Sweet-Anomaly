@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sweet Anomaly</title>
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagenes/logo_222.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css', v=5) }}">
+
+
+  </head>
+
+  <header>
+    <div class="logotipo">
+      <img src="{{ url_for('static', filename='imagenes/imag_1.jpg') }}" width="100">
+    </div>
+  </header>
+  <body>
+
+    <h1><center>Bienvenidos a Sweet Anomaly</center></h1>
+
+    <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('postres') }}">Postres</a></li>
+        <li><a href="{{ url_for('acercadenosotros') }}">Acerca de nosotros</a></li>
+        <li><a href="{{ url_for('contactos') }}">Contactos</a></li>
+        <li><a href="{{ url_for('clientes') }}">Datos recopilados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+    <h2 id="clientes-titulo">Clientes Registrados 🍰</h2>
+
+{% if datos and datos|length %}
+  <table id="clientes-tabla">
+    <thead>
+      <tr>
+        <th>ID</th><th>Cédula</th><th>Nombre</th><th>Apellido</th>
+        <th>Correo</th><th>Contraseña</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for fila in datos %}
+      <tr>
+        <td>{{ fila.id }}</td>
+        <td>{{ fila.cedula }}</td>
+        <td>{{ fila.nombre }}</td>
+        <td>{{ fila.primerApellido }}</td>
+        <td>{{ fila.email }}</td>
+        <td>{{ fila.contrasena }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p id="clientes-empty">No hay registros aún </p>
+{% endif %}
+
+

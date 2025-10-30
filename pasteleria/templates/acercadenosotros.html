@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acerca de nosotros</title>
+  
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagenes/logo_222.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+
+</head>
+<body>
+
+  <header>
+    <div class="logotipo3">
+      <img src="{{ url_for('static', filename='imagenes/imag_1.jpg') }}" width="100">
+    </div>
+  </header>
+  <h1><center>Acerca de nosotros</center></h1>
+  <header>
+    <div class="NO C"></div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('postres') }}">Postres</a></li>
+        <li><a href="{{ url_for('acercadenosotros') }}">Acerca de nosotros</a></li>
+        <li><a href="{{ url_for('contactos') }}">Contactos</a></li>
+        <li><a href="{{ url_for('clientes') }}">Datos recopilados</a></li>
+      </ul>
+    </nav>
+  </header>
+    </body>
+<section class="titan">
+      <div class="historia"></div>
+      <article>
+        <h2><center>Origen de Sweet Anomaly</center></h2>
+       <center><p>No siempre estuvo aquí. No hay registros, planos ni permisos. Solo apareció una mañana, como si hubiera estado dormida en el tiempo.</p>
+
+        <p>La gente entró por el olor: fresa, caramelo... y algo que sólo se sueña.</p>
+        
+        <p>Dentro, los postres tenían nombres raros, los espejos a veces no devolvían la mirada, y los relojes iban por su cuenta.</p>
+
+        <p>Una carta detrás del mostrador dice: <em>"Porque algunos recuerdos solo pueden conservarse si son cocinados con cuidado."</em></p>
+
+        <p>Dicen que si pides el postre sin nombre, recordarás todo lo que el tiempo te obligó a olvidar. Nadie lo ha pedido dos veces.</p></center>
+
+        <center><p><em>Sweet Anomaly no se busca. Ella te encuentra.</em></p></center>
+           </div>
+      </article>
+      <article>
+        <div class="donde">
+        <h2><center>¿Donde se ubica?</center></h2>
+        <center>
+          <p>Aparece en callejones que no estaban ahí. En mapas mal impresos. En sueños.</p>
+          <p>Solo quienes realmente lo necesitan, pueden entrar.</p>
+          <p>Pero si alguna vez notas que el envoltorio de una galleta está caliente, o que una receta en tu libreta aparece escrita sola…</p>
+          <p class="destacado">Puede que la pastelería te esté buscando a ti.</p>
+        </center>
+      </div>
+      </article>
+    </section>
+
+    <aside class="sidebar2">
+      <h3>Nuestra linda mascota</h3>
+      <figure class="mascota">
+      <video src="{{ url_for('static', filename='videos/mascota.mp4') }}"
+       autoplay muted loop playsinline width="320">
+         width="280"></video>
+</figure>
+
+    </aside>
+
+  </main>
+ <footer>
+   <p>Pierdete en nuestros dulces postres</p>
+ </footer>
+  </body>
+</html>

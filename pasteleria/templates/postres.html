@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Postres</title>
+ 
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagenes/logo_222.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+
+
+</head>
+<body>
+
+  <header>
+    <div class="logotipo2">
+      <img src="{{ url_for('static', filename='imagenes/imag_1.jpg') }}" width="100">
+    </div>
+  </header>
+  <center><h1>Postres</h1></center>
+  <header>
+    <div class="NO C"></div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('postres') }}">Postres</a></li>
+        <li><a href="{{ url_for('acercadenosotros') }}">Acerca de nosotros</a></li>
+        <li><a href="{{ url_for('contactos') }}">Contactos</a></li>
+        <li><a href="{{ url_for('clientes') }}">Datos recopilados</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
+<div class="introduccion">
+  <nav><center><p>En Sweet Anomaly los postres no solo endulzan el paladar: susurran historias.</p>
+    <p>Cada bocado es una pequeña puerta a un recuerdo que aún no viviste—un bizcocho que late como un corazón de fresa, galletas</p>
+     <p>que crujen como un suspiro retenido y volcanes de chocolate que ocultan maravillas en su centro fundente.</p>
+     <p>Aquí, la repostería clásica se encuentra con un leve escalofrío de misterio, y la primera cucharada siempre trae una pregunta:</p>
+     <p>¿Qué secreto guardarás cuando se derrita el último rastro de azúcar?</p></center></nav>
+</div>
+
+     <div>
+      <section class="Exp.1">
+  <section class="galeria-postres">
+  <div class="postre">
+    <h2><p>Pastel de fresas con crema</p></h2>
+    <img src="{{ url_for('static', filename='imagenes/pastelde_fresa.jpg') }}" width="300"
+    <p>Un clásico irresistible: bizcocho esponjoso, relleno de crema batida y fresas frescas. Cada bocado es suave, dulce y refrescante, como un abrazo en primavera.</p>
+  </div>
+
+  <div class="postre">
+    <h2><p>Galletas Red Velvet</p></h2>
+    <img src= "{{ url_for('static', filename='imagenes/galletasred_velvet.jpg') }}" width="300"
+    <p>Crujientes por fuera, suaves por dentro. Estas galletas combinan el cacao con la dulzura de la vainilla y un toque de amor.</p>
+  </div>
+  <div class="postre">
+    <h2><p>Volcan de chocolate</p></h2>
+    <img src="{{ url_for('static', filename='imagenes/volcande_chocolate.jpg') }}" width="300";
+    <p>Un postre caliente con corazón derretido. Al romper su centro, el chocolate fluye como lava dulce. Ideal para los amantes del cacao intenso y los finales felices.</p>
+  </div>
+  <div class="postre">
+    <h2><p>Parfait de vainilla y frutos rojos</p></h2>
+    <img src="{{ url_for('static', filename='imagenes/parfait.jpg') }}" width="300";
+    <p>Capas de crema de vainilla, galletas y mermelada casera de frambuesas y moras. Un equilibrio entre lo dulce y lo ácido que despierta memorias de verano.</p>
+  </div>
+  <div class="postre">
+    <h2><p>Creme Brulee</p></h2>
+    <img src="{{ url_for('static', filename='imagenes/creme_brulee.jpg') }}" width="300";
+    <p>Elegancia francesa en cada cucharada. Crema suave con aroma a vainilla, coronada con una capa crujiente de caramelo dorado. Delicado, sutil… perfecto.</p>
+  </div>
+</section>
+
+<footer>
+   <p>Pierdete en nuestros dulces postres</p>
+ </footer>

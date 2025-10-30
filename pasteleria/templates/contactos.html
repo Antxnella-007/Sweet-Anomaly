@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Contactos</title>
+
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagenes/logo_222.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+
+</head>
+<body>
+
+  <header>
+    <div class="logotipo4">
+     <img src="{{ url_for('static', filename='imagenes/imag_1.jpg') }}" width="100">
+    </div>
+  </header>
+
+  <center><h1>Contactos</h1></center>
+  <header>
+    <div class="NO C"></div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('postres') }}">Postres</a></li>
+        <li><a href="{{ url_for('acercadenosotros') }}">Acerca de nosotros</a></li>
+        <li><a href="{{ url_for('contactos') }}">Contactos</a></li>
+        <li><a href="{{ url_for('clientes') }}">Datos recopilados</a></li>
+      </ul>
+    </nav>
+  </header>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagenes/logo_222.png') }}">
+
+  <section class="text1">
+        <center><h2>¡Contactanos!</h2></center>
+        <center><p>¿Tienes un antojo que no existe en ningún recetario? ¿O quizá un recuerdo dulce que todavía no reconoces? Escríbenos.</p>
+          <p>Detrás de cada mensaje hay un horno encendido y un cuaderno con páginas en blanco, listo para transformar tus ideas en postres que palpitan.</p>
+          <p>No importa si llegas por correo, susurros digitales o una nota deslizándose bajo la puerta:</p>
+          <p>En Sweet Anomaly siempre escuchamos—y quién sabe, tal vez respondamos con el aroma de algo recién horneado.</p></center>
+
+          <div class="logotipo3">
+      <img src="{{ url_for('static', filename='imagenes/adobeexpress_file.png') }}" width="150"
+    </div>
+
+  <section class="form">
+    <center><h4>❤👻Formulario de Registro👻❤</h4></center>
+    <form action="{{ url_for('contactos') }}" method="post">
+
+    <center>
+      <input class="controles" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+    </center>
+    <center>
+      <input class="controles" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+    </center>
+    <center>
+      <input class="controles" type="text" name="cedula" id="cedula" placeholder="Ingrese su Cédula" required>
+    </center>
+    <center>
+      <input class="controles" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+    </center>
+    <center>
+      
+      <input class="controles" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña" required>
+    </center>
+    <center>
+      <button class="button" type="submit">Registrarse</button>
+    </center>
+  </form>
+</section>
+
+</body>
+</html>
+<footer class="footer4">
+  <p>Pierde te en nuestros dulces postres</p>
+</footer>

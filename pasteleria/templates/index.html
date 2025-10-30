@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sweet Anomaly</title>
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagenes/logo_222.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+
+  </head>
+
+  <header>
+    <div class="logotipo">
+      <img src="{{ url_for('static', filename='imagenes/imag_1.jpg') }}" width="100">
+    </div>
+  </header>
+  <body>
+    <h1><center>Bienvenidos a Sweet Anomaly</center></h1>
+
+    <header>
+    <div class="NO C"></div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('index') }}">Inicio</a></li>
+        <li><a href="{{ url_for('postres') }}">Postres</a></li>
+        <li><a href="{{ url_for('acercadenosotros') }}">Acerca de nosotros</a></li>
+        <li><a href="{{ url_for('contactos') }}">Contactos</a></li>
+        <li><a href="{{ url_for('clientes') }}">Datos recopilados</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="article">
+      <div class="cuadro"></div>
+      <article>
+        <h2>¿Porque elegirnos?</h2>
+        <p>En nuestra pasteleria Sweet Anomaly encontrara lo mejor de lo mejor en cuanto reposteria
+          moderna o clasica, usted no se decepcionara de los dulces e inolvidables sabores que nuestra
+          pasteleria le ofrecera.</p>
+          <p>Muchos clientes aseguran que tras el primer bocado, comenzaron a soñar con lugares que no conocían...
+           Pero no se preocupe, nuestros dulces no tienen nada mas que amor.</p>
+           </div>
+      </article>
+      <article>
+        <div class="cuadro">
+        <h2>¿Porque lo hacemos?</h2>
+        <p>Horneamos para aquellos que buscan más que azúcar.</p>
+        <p>Para quienes sienten que algo falta en sus recuerdos, para quienes sueñan con lugares que nunca han visitado. Cada pastel, cada taza de café, cada galleta lleva consigo una historia… a veces, incluso una advertencia.</p>
+        <p>Lo hacemos porque Sweet Anomaly no es solo una cafetería. Es un umbral. Una pausa entre lo cotidiano y lo incomprensible. Y en este lugar, cada sabor es una llave.</p>
+      </div>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Lista de mejores postres:</h3>
+      <center><li>🍓  Pastel de fresas con crema</li></center>
+      <center><li>💗  Galletas Red Velvet</li></center>
+      <center><li>⛰️  Volcan de chocolate</li></center>
+      <center><li>🍮  Creme Brûlée</li></center>
+      <center><li>🍫  Granada con chocolate</li></center>
+      <center><li>🍩  Donas rellenas de crema</li></center>
+      <center><li>🍧  Parfait de vainilla y mermelada de frutos rojos</li></center>
+    </aside>
+  </main>
+ <footer>
+   <p>Pierdete en nuestros dulces postres</p>
+ </footer>
+  </body>
+</html>
